@@ -1,0 +1,54 @@
+<% include header %>
+
+<!-- <style>
+    .carousel-item {
+        width: 100%;
+    }
+</style> -->
+
+<div class="container-fluid">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ol>
+
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+
+<div class="container">
+    <div class="row">
+        <% products.forEach(function(product){ %>
+            <div class="col-lg-3 col-md-3" style="padding-top: 5rem;">
+                <div class="card" style="width: 18rem; height: 25rem;">
+                    <img src="<%= product.img_url %>" class="card-img-top" style="height: 200px; width: auto; max-width: 300px">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= product.product_name %></h5>
+                        <h4 class="card-text"><i class="fas fa-rupee-sign"> </i><%= product.price %></h4>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/products/<%=product.product_id%>" class="btn btn-info">More Info</a>
+                    </div>
+                </div>
+            </div>
+        <% }); %> 
+    </div>
+</div>
+
+
+<div id="mybutton" style="position: fixed; bottom: 30px; right: 30px;">
+    <a class="btn" href="/newproduct">
+        <i class="fas fa-plus-circle fa-4x"></i>
+    </a>
+</div>
+
+<% include footer %>
+<% include bootstrap-cdn %>
