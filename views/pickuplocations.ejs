@@ -1,0 +1,27 @@
+<% include header %>
+
+<div class="container">
+    <h1> Pickup location details</h1>
+</div>
+
+
+<div class="container">
+    <div class="row">
+            <% products.forEach(function(pickup){ %>
+        <div class="col-md-9">
+                <div class="thumbnail">
+
+                        <div class="caption-full">
+                          <h4><a><%= pickup.name %></a></h4>
+                          <h3>Location:<%= pickup.location %></h3>
+                          <p><%= pickup.no_of_item %></p>
+                        </div>
+                      </div>
+        </div>
+        <% }) %>
+    </div>
+</div>
+
+
+<% include footer %>
+<% include bootstrap-cdn %>

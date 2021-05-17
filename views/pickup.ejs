@@ -1,0 +1,49 @@
+<% include header %>
+
+<style>
+    form{
+        margin-top: 10em;
+    }
+</style>
+
+<div class="container">
+    <form action="/pickup" method="POST" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-lg-4 form-group">
+                <label for="product_id"> Product ID </label>
+                <input type="number" name="product_id" class="form-control" id="pickupname">
+            </div>
+            <div class="col-lg-4 form-group">
+                <label for="pickupname"> Product Name </label>
+                <input type="text" name="pickupname" class="form-control" id="pickupname">
+            </div>
+        
+        </div>
+        <div class="form-group">
+            <label for="productlocation">Pickup Location </label>
+            <input name="location" class="form-control" id="productlocation">
+        </div>
+
+        <div class="form-group">
+            <label for="no_of_item">Number of item </label>
+            <input name="no_of_item" class="form-control" id="no_of_item">
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary">
+        </div>
+    </form>
+</div>
+
+
+
+
+
+<% include footer %>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
