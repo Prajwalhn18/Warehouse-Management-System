@@ -37,3 +37,9 @@ Programming languages and tools used in making the project:
 ● Xampp server is a simple, lightweight Apache distribution that makes it extremely easy for developers to create a local web server for testing and deployment purposes. It connects MySql and Javascript through Apache server.
 
 ● Web-Browser: Google Chrome/ Mozilla Firefox.
+
+# Images
+
+![](ProjectImages/adminlogin.PNG)
+
+![](ProjectImages/loggedinpage.PNG)
